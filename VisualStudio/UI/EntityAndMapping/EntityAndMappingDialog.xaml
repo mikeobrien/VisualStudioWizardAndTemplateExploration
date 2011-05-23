@@ -1,0 +1,31 @@
+﻿<Window x:Class="VisualStudio.UI.EntityAndMapping.EntityAndMappingDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Title="Ultraviolet Catastrophe Entity &amp; Mapping" Height="406" Width="655" Icon="/VisualStudio;component/UI/EntityAndMapping/Entities.ico" WindowStartupLocation="CenterScreen" ShowInTaskbar="False">
+    <Grid>
+        <Button Content="Cancel" Margin="0,0,12,12" Name="Cancel" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="99" IsCancel="True" />
+        <Button Content="OK" Margin="0,0,117,12" Name="Ok" Height="23" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="99" Click="Ok_Click" />
+        <GroupBox Header="Connection" Height="135" Margin="12,12,12,0" Name="groupBox1" VerticalAlignment="Top">
+            <Grid>
+                <Label Content="Server Name" Height="28" HorizontalAlignment="Left" Margin="13,14,0,0" Name="label2" VerticalAlignment="Top" />
+                <TextBox Height="23" Margin="107,16,16,0" Name="ServerName" VerticalAlignment="Top" Text="{Binding Path=Server}" TextChanged="ServerName_TextChanged" />
+                <Label Content="Database" Height="31" HorizontalAlignment="Left" Margin="13,42,0,0" Name="label3" VerticalAlignment="Top" />
+                <ComboBox Height="23" Margin="107,45,16,0" Name="Databases" VerticalAlignment="Top" Text="{Binding Path=Database}" DropDownOpened="Databases_DropDownOpened" />
+                <Label Content="Table Name" Height="28" HorizontalAlignment="Left" Margin="13,72,0,0" Name="label4" VerticalAlignment="Top" />
+                <ComboBox Height="23" Margin="107,77,16,0" Name="Tables" Text="{Binding Path=Table}" VerticalAlignment="Top" DropDownOpened="Tables_DropDownOpened" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Naming" Margin="12,153,12,41" Name="groupBox2">
+            <Grid>
+                <Label Content="Namespace: (i.e. Accounting.GeneralLedger)" Height="27" HorizontalAlignment="Left" Margin="13,43,0,0" Name="label1" VerticalAlignment="Top" Width="266" />
+                <Label Content="Entity Name" Height="28" HorizontalAlignment="Left" Margin="13,15,0,0" Name="label5" VerticalAlignment="Top" />
+                <TextBox Height="23" Margin="97,17,16,0" Name="EntityName" Text="{Binding Path=EntityName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" />
+                <TextBox Height="23" Margin="261,47,16,0" Name="Namespace" Text="{Binding Path=Namespace, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Top" />
+                <Label Content="Entity Name:" Height="27" HorizontalAlignment="Left" Margin="13,72,0,0" Name="label6" VerticalAlignment="Top" Width="266" />
+                <TextBox Height="23" Margin="97,76,16,0" Name="EntityFullName" Text="{Binding Path=EntityFullName, Mode=OneWay}" VerticalAlignment="Top" IsReadOnly="True" />
+                <Label Content="Mapping Name:" Height="27" HorizontalAlignment="Left" Margin="13,101,0,0" Name="label7" VerticalAlignment="Top" Width="266" />
+                <TextBox Height="23" Margin="116,105,16,0" Name="MappingFullName" Text="{Binding Path=MappingFullName, Mode=OneWay}" VerticalAlignment="Top" IsReadOnly="True" />
+            </Grid>
+        </GroupBox>
+        <Button Content="o__O" Height="23" HorizontalAlignment="Left" Margin="18,0,0,12" Name="Preview" VerticalAlignment="Bottom" Width="30" Click="Preview_Click" />
+    </Grid>
+</Window>

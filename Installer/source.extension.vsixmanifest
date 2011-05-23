@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
+  <Identifier Id="UltravioletCatastropheTemplates.2A0AEA8B-7050-4B0D-AF95-BA6064DCFBFF">
+    <Name>Ultraviolet Catastrophe Visual Studio Templates</Name>
+    <Author>Mike O'Brien</Author>
+    <Version>1.0</Version>
+    <Description xml:space="preserve">Ultraviolet Catastrophe Visual Studio Templates</Description>
+    <Locale>1033</Locale>
+    <MoreInfoUrl>http://www.mikeobrien.net</MoreInfoUrl>
+    <GettingStartedGuide>http://www.mikeobrien.net</GettingStartedGuide>
+    <Icon>Logo.png</Icon>
+    <InstalledByMsi>false</InstalledByMsi>
+    <SupportedProducts>
+      <VisualStudio Version="10.0">
+        <Edition>Ultimate</Edition>
+        <Edition>Premium</Edition>
+        <Edition>Pro</Edition>
+        <Edition>Express_All</Edition>
+        <Edition>IntegratedShell</Edition>
+      </VisualStudio>
+    </SupportedProducts>
+    <SupportedFrameworkRuntimeEdition MinVersion="4.0" MaxVersion="4.0" />
+  </Identifier>
+  <References />
+  <Content>
+    <Assembly AssemblyName="VisualStudio;AssemblyName|">|VisualStudio|</Assembly>
+    <ItemTemplate>ItemTemplates</ItemTemplate>
+  </Content>
+</Vsix>

@@ -1,0 +1,17 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
+  <TemplateData>
+    <Name>Entity &amp; Mapping</Name>
+    <Description>Create an entity and mapping.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <SortOrder>10</SortOrder>
+    <Icon>Entities.ico</Icon>
+    <DefaultName>EntityName</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <CustomParameters />
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>VisualStudio, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a6497c08973943ce</Assembly>
+    <FullClassName>VisualStudio.Extensibility.EntityAndMappingWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>
